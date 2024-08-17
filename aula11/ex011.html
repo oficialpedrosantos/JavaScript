@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAÍS</title>
+    <style>
+        input#txt {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>O QUE VOCÊ É?</h1>
+    <p>Digite aqui o país onde você mora: <input type="text" name="txt" id="txt"> <input type="submit" value="Enviar" onclick="pais()"></p>
+    <p id="res"></p>
+    
+    <script>
+        function pais(){
+            var txta = document.getElementById('txt')
+            var txtb = String(txta.value)
+            var txtc = txtb.toLocaleUpperCase()
+            if (txtc == 'BRASIL'){
+                res.innerHTML = `Morando no ${txtb}, você é brasileiro!`
+            } else {
+                res.innerHTML = `Morando no ${txtb}, você é estrangeiro!`
+            }   
+        }
+
+
+
+    </script>
+</body>
+</html>
