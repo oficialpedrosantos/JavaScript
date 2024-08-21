@@ -25,6 +25,10 @@ p {
     margin: 5px;
 }
 
+div#res {
+    margin: 5px;
+}
+
 footer {
     text-align: center;
     margin: 30px;
