@@ -6,14 +6,14 @@ function tabuada(){
         alert('[Erro] Digite um número!')
     } else {
         let num = Number(n.value)
-        /*let cont = 1
+        let cont = 0
         tab.innerHTML = ''
         while (cont <= 10) {
-            let item = document.createElement('option')
-            item.text = `${num} x ${cont} = ${num*cont}`
-            text.value = `tab${cont}`
-            tab.appendChild(item)
+            let opt = document.createElement('option')
+            opt.innerHTML = `${num} x ${cont} = ${num*cont}`
+            opt.value = `tab${cont}`
+            tab.appendChild(opt)
             cont++
         }
-    }*/
+    }
 }
